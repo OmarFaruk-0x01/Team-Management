@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('antd/dist/antd.css');
 html,
 body {
   padding: 0;
@@ -13,4 +17,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.ant-select-selector{
+  @apply !rounded-md md:!h-9 text-base;
+}
+.ant-select-selection-item{
+  @apply top-[2px]
 }
