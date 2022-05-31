@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Select as AntSelect, SelectProps as AntSelectProps } from "antd";
-import { CountryType } from "../../constants/countries";
+import { CountryType } from "../constants/countries";
 const { Option } = AntSelect;
 
 interface SelectProps extends AntSelectProps {

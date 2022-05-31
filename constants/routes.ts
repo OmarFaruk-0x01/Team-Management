@@ -1,25 +1,29 @@
-
-import { DashboardOutlined } from "@ant-design/icons";
+import {
+  DashboardOutlined,
+  GroupOutlined,
+  TeamOutlined,
+} from "@ant-design/icons";
+import { createElement } from "react";
 const Nav_Routes = [
   {
-    key: "dashboard",
-    label: "Dashboard",
-    icon: DashboardOutlined,
+    key: "/",
+    label: "Teams",
+    icon: createElement(GroupOutlined),
   },
   {
-    key: "websites",
-    label: "Website",
-    icon: DashboardOutlined,
+    key: "newTeam",
+    label: "New Team",
+    icon: createElement(TeamOutlined),
   },
   {
-    key: "template",
+    key: "editTeam",
     label: "Templates",
-    icon: DashboardOutlined,
+    icon: createElement(DashboardOutlined),
   },
   {
     key: "help",
     label: "Help",
-    icon: DashboardOutlined,
+    icon: createElement(DashboardOutlined),
   },
 ];
 

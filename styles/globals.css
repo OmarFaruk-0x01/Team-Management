@@ -1,13 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('antd/dist/antd.css');
+@import url("antd/dist/antd.css");
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -18,9 +17,58 @@ a {
 * {
   box-sizing: border-box;
 }
-.ant-select-selector{
+.ant-select-selector {
   @apply !rounded-md md:!h-9 text-base;
 }
-.ant-select-selection-item{
-  @apply top-[2px]
+.ant-select-selection-item {
+  @apply top-[2px];
+}
+.card-ribbon-wrapper {
+  @apply relative w-full  ;
+}
+
+.card-ribbon {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: "tnum";
+  position: absolute;
+  top: 8px;
+  height: 22px;
+  padding: 0 8px;
+  color: #fff;
+  line-height: 22px;
+  white-space: nowrap;
+  background-color: #1890ff;
+  border-radius: 2px;
+}
+.card-ribbon-placement-end {
+  right: -8px;
+  border-bottom-right-radius: 0;
+}
+
+.card-ribbon-corner {
+  position: absolute;
+  top: 100%;
+  width: 8px;
+  height: 8px;
+  color: currentcolor;
+  border: 4px solid;
+  transform: scaleY(0.75);
+  transform-origin: top;
+}
+
+.card-ribbon.card-ribbon-placement-end .card-ribbon-corner {
+  right: 0;
+  border-color: cornflowerblue transparent transparent cornflowerblue;
+}
+
+.ant-card-actions  {
+  background-color:transparent !important;
 }
