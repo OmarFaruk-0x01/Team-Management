@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
-import { MemberTypes } from "../pages/types";
+import { MemberTypes } from "../types";
 import React, { useState } from "react";
 import {
   Skeleton,
